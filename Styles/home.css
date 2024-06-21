@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+    
+}
+
+:root {
+--grad-ui:  #02523c;
+background: linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+background: -webkit-linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+background: -moz-linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+--color1 : #06846a;
+--color2: #05735b ;
+--color3 : #03634b ;
+--color4  : #02523c ;
+--color5  : #00412c ;
+--black-main: #000000;
+--white-main: #edf2f4;
+--font: "DM Sans", sans-serif;
+}
+
+body{
+    background: var(--white-main);
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--grad-ui);
+    padding: 20px;
+
+    width: 100vw;
+    height: 100px;
+
+
+}
+header > img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+
+}
+
+nav {
+    float: right;
+    margin: 20px;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--white-main);
+    padding: 1rem;
+}
+nav > :hover {
+    background-color: var(--color2);
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+
+/*Main*/
+main{
+    height: 100%;
+    width: 100%;
+    position: relative;;
+}
+
+.hero {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+span {
+    background-color: #03634b;
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px 0px;
+    color: var(--white-main);
+}
+.title {
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; 
+    width: 100vw;  
+    padding: 2rem;
+    margin-left: 25%;
+}
+h2 {
+    
+    font-weight: 600;
+}
+
+
+p {
+    
+    width: 600px;
+    padding-top: 2rem;
+}
+
+
+.box > img {
+    width: 800px;
+    border-radius: 10px;
+  
+}
+
+button {
+    background-color: var(--color1);
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: none;
+    margin-top: 2rem;
+}
+button > a {
+    text-decoration: none;
+    color: var(--white-main);
+    font-weight: 600;
+}
+
+footer {
+    height: 30px;
+    width: 100vw;
+    background: var(--color5);
+    text-align: center;
+}
+h5 {
+   
+    padding: 10px;
+    color: var(--white-main);
+}
+

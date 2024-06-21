@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    
+    
+}
+
+:root {
+--grad-ui:  #02523c;
+background: linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+background: -webkit-linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+background: -moz-linear-gradient(323deg,#02523c 0%, #03634b 40%, #00412c 80%);
+--color1 : #06846a;
+--color2: #05735b ;
+--color3 : #03634b ;
+--color4  : #02523c ;
+--color5  : #00412c ;
+--black-main: #000000;
+--white-main: #edf2f4;
+--font: "DM Sans", sans-serif;
+}
+
+body{
+    background: var(--white-main);
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--grad-ui);
+    padding: 20px;
+
+    width: 100vw;
+    height: 100px;
+
+
+}
+header > img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+
+}
+
+nav {
+    float: right;
+    margin: 20px;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--white-main);
+    padding: 1rem;
+}
+nav > :hover {
+    background-color: var(--color2);
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+
+/*Main*/
+main {
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
+form {
+    margin-left:25%;
+    height: 600px;
+    width: 800px;
+    background-color: #06846a;
+    padding: 4rem;
+    border-radius: 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+textarea {
+    border-radius: 6px;
+    resize: none;
+    width: 670px;
+    height: 200px;
+}
+input[type=submit] {
+    background-color: var(--color1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+footer {
+    height: 30px;
+    width: 100vw;
+    background: var(--color5);
+    text-align: center;
+}
+h5 {
+   
+    padding: 10px;
+    color: var(--white-main);
+}
+
