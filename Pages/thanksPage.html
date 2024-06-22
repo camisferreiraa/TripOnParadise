@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            background: #197f00;
+            background: linear-gradient(285deg,#197f00 0%, #0ccd0c 80%);
+            background: -webkit-linear-gradient(285deg,#197f00 0%, #0ccd0c 80%);
+            background: -moz-linear-gradient(285deg,#197f00 0%, #0ccd0c 80%);
+            width: 100vw;
+            height: 100vh;
+            
+            
+
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            margin-top: 25%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+        <h1 id="msg">Obrigado(a) pela preferência❤️😊</h1>
+
+ <script>
+    function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const nome = getQueryParam('nome');
+        if (nome) {
+            document.getElementById('msg').textContent = `Obrigado, ${nome}, pela preferência!❤️😁`;
+        }
+ </script>   
+</body>
+</html>
